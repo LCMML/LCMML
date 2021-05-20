@@ -90,8 +90,14 @@ Hiermit kann man die Anzahl der genutzten Kerne für den Rechenauftrag einstelle
 
 
 ```python
-s = "Python syntax highlighting"
-print s
+# imports
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+import rasterio
+from pathlib import Path
+from sklearn.ensemble import RandomForestClassifier as RF
+from sklearn.model_selection import train_test_split
 ```
 
 ***WORKFLOW***
