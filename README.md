@@ -80,8 +80,18 @@ X sind hier die Trainingsdaten. Shape of X: Die Reihen repräsentieren die Anzah
 X können hier alle/neue Daten sein. Gibt ein anderes y aus, welches die Klassenlabels repräsentiert. Muss danach wieder in ein 2 Dimensionales Array umgeformt werden.
 
 
+**predict_proba(X)**
+Wahrscheinlichkeiten für alle Klassen. Array der 2. Dimension . Erste ist die Anzahl an Samples/Pixel und zweite gibt die Wahrscheinlichkeit für jede Klasse aus.
+
+**n_jobs Parameter**
+Hiermit kann man die Anzahl der genutzten Kerne für den Rechenauftrag einstellen. 
+
+
+
 
 ```python
 s = "Python syntax highlighting"
 print s
 ```
+
+***WORKFLOW***
