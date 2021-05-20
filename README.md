@@ -176,6 +176,10 @@ X_train, X_test, y_train, y_test = train_test_split(bands[labels>=0,:], labels_1
 rf = RF(n_estimators=50, n_jobs=-1, oob_score=True)
 
 
+
+```
+* **Model Trainieren**
+```python
 # train our model
 rf.fit(X_train, y_train)
 
@@ -185,6 +189,14 @@ rows, cols, n_bands = bands.shape
 # transform input data into 2d array of shape 
 X_predict = bands.reshape((rows*cols, n_bands))
 
+```
+
+* **Model Validieren**
+```python
+
+```
+* **Model Anwenden**
+```python
 # apply our model on (unseen) data
 y_pred = rf.predict(X_predict)
 
@@ -203,6 +215,3 @@ with rasterio.open(
     transform=template["transform"]) as fobj:
     fobj.write(y_pred_2d, 1)
 ```
-* **Model Trainieren**
-* **Model Validieren**
-* **Model Anwenden**
