@@ -95,3 +95,11 @@ print s
 ```
 
 ***WORKFLOW***
+* **Training, Test und Validierungsdaten besorgen**
+* **Geodaten besorgen**
+* **Daten vorbereiten**
+    * Reprojezieren und Rasterisieren der Daten
+* **Daten Laden**
+* **Model Trainieren**
+* **Model Validieren**
+* **Model Anwenden**
