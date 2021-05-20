@@ -170,8 +170,7 @@ print(labels_1d.shape)
 
 
 # split into 
-X_train, X_test, y_train, y_test = train_test_split(bands[labels>=0,:], labels_1d,
-                                             test_size=0.3, random_state=0, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(bands[labels>=0,:], labels_1d, test_size=0.3, random_state=0, shuffle=True)
 
 # instantiate classificator
 rf = RF(n_estimators=50, n_jobs=-1, oob_score=True)
