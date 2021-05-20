@@ -15,7 +15,7 @@ Hallo Ronald zum zweiten
 #### Supervised Learning
 Trainingsdatensatz wird vorgegeben. Für die Trainingsdaten hat man Labels, die beschreiben, welche Klasse welches Label hat. Kann zur Klassifikation angewandt oder für Regression angewandt werden.
 Es gibt Pixel- oder Objektbasierte Methoden.
-*Man benötigt:*
+**Man benötigt:**
 * Raw Data (bei uns Satellitendaten )
 * Labels (numerische Werte, zB.: 0-3, wobei 0 = schnee, 1 = fels, 2 = wald und 3 = wiese)
   * Labels werden normal Manuel aufgenommen (Arbeitsintensiv)
@@ -26,19 +26,22 @@ Beim Trainingsdatensatz wird:
 * Danach soll das Modell eine Vorhersage treffen können.
 * Diese Vorhersage muss dann noch validiert überprüft werden.
 
-*Hyperparameter:*
+**Hyperparameter:**
 * Steuern den Lernprozess.
 * Durchtesten dieser ist notwendig um gute Ergebnisse zu liefern.
 * Beispiele hierfür sind:
     * Lernrate
     * Anzahl der Bäume im Random Forest
+        * Sollte nicht kleiner als 10 sein aber auch nicht zu groß
+    * Wichtigkeit der Variablen wird zudem ausgegeben.
 
-*Modellparameter:*
+
+**Modellparameter**
 * Sind Modellintern und werden im Lernprozes erzeugt/eingestellt.
 * Wir als nutzer haben keinen Einfluss darauf.
 
 
-*Terminologie:*
+**Terminologie:**
 * Feature, variable, predictor: Werden Synonym genutz. Eine Variable kann z.B. das rote Band sein. Üblicherweise mehrere Feature.
 * Labels: Vorgegebenen Labels um den Klassifikator zu Trainieren. Z.B: Klassenwerte pro Pixel.
 * Feature space: Mehrdimensionale Raum, den die Variablen aufspannen. Die Dimension entspricht der Anzahl an Features die man zur verfügung stellt.
@@ -47,7 +50,7 @@ Beim Trainingsdatensatz wird:
 * "X": So werden oft die Daten/Variablen bezeichnet.
 * "y": So werden oft die Labels bezeichnet.
 
-*Entscheidungsbäume:*
+**Entscheidungsbäume:**
 * Werden für Klassifikation und Regression genutzt.
 * Funktion:
     * Man Teilt die Daten anhand einer Variable auf.
@@ -57,7 +60,7 @@ Beim Trainingsdatensatz wird:
     * Werden neue Daten durch den Baum geschickt, nehmen sie den Pfad, der dem vorherigen Training entsprungen ist.
 * Basiert auf boolscher Logik.
 
-*Random Forest:*
+**Random Forest:**
 * Random Forest fasst vieler solcher Entscheidungsbäume in einem Modell.
 * 2/3 der Trainingsdaten werden als Samples herangezogen.
 * Es wird immer nur ein Subset an Daten herangezogen, wodurch die Bäume untereinander nicht so sehr korrelieren.
