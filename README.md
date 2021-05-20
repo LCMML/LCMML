@@ -86,9 +86,10 @@ Wahrscheinlichkeiten für alle Klassen. Array der 2. Dimension . Erste ist die A
 **n_jobs Parameter**
 Hiermit kann man die Anzahl der genutzten Kerne für den Rechenauftrag einstellen. 
 
-
-
-
+***WORKFLOW***
+* **Training, Test und Validierungsdaten besorgen**
+* **Geodaten besorgen**
+* **Imports**
 ```python
 # imports
 import numpy as np
@@ -99,10 +100,6 @@ from pathlib import Path
 from sklearn.ensemble import RandomForestClassifier as RF
 from sklearn.model_selection import train_test_split
 ```
-
-***WORKFLOW***
-* **Training, Test und Validierungsdaten besorgen**
-* **Geodaten besorgen**
 * **Daten vorbereiten**
     * Reprojezieren und Rasterisieren der Daten
 * **Daten Laden**
