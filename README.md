@@ -73,4 +73,15 @@ Beim Trainingsdatensatz wird:
     * Der Algorithmus schaut dann, welche Klasse am öftesten auftritt und gibt diese dann aus Voraussage aus.
 
 
+**model.fit(X,y)**
+X sind hier die Trainingsdaten. Shape of X: Die Reihen repräsentieren die Anzahl der Samples, also Pixel im Bild. Die Spalten die Variablen (Bänder, Zeitschritte, o.Ä.). Somit ist es ein 2 Dimensionales Array. Shape of y: 1 Dimensional, gibt Labels passend zu den Samples an. 
 
+**model.predict(X)**
+X können hier alle/neue Daten sein. Gibt ein anderes y aus, welches die Klassenlabels repräsentiert. Muss danach wieder in ein 2 Dimensionales Array umgeformt werden.
+
+
+
+```python
+s = "Python syntax highlighting"
+print s
+```
