@@ -1,4 +1,15 @@
 # LCMML
+## Thema
+### Land cover mapping Schrankogel (Orthophotos, Machine Learning)  (Tabernig,Voit)
+- Acquisition of reference data
+Possible focus on
+- Proper sampling scheme
+- Testing of different algorithms
+- Grid Search for Hyperparameters
+- Use of other packages than scikit-learn
+- Deep learning: Keras or Pytorch
+- ML: mlpack, xgboost
+
 ## Dokumentation
 
 ## Notizen
