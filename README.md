@@ -7,8 +7,8 @@ Possible focus on
 - Testing of different algorithms
 - Grid Search for Hyperparameters
 - Use of other packages than scikit-learn
-- Deep learning: Keras or Pytorch
-- ML: mlpack, xgboost
+    - Deep learning: Keras or Pytorch
+    - ML: mlpack, xgboost
 
 ## Dokumentation
 
